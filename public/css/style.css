@@ -13,7 +13,12 @@ body {
 }
 h1 {
     margin-top: 5%;
-    font-size: 500%;
+    font-size: 525%;
+    text-shadow: 2px 2px black;
+}
+#intro {
+    margin-top: 5%;
+    font-size: 140%;
     text-shadow: 2px 2px black;
 }
 .containerStyles {
@@ -22,7 +27,19 @@ h1 {
     text-align: center;
     overflow: auto;
 }
-
+h2 {
+    text-align: center;
+    font-size: 200%;
+    font-family: Quicksand;
+}
+.inventories {
+    background-color: yellow;
+    margin: 4%;
+}
+.expire {
+    background-color: red;
+    margin: 4%;
+}
 #footer {
     width: 100%;
     margin-top: 0px;
