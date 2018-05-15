@@ -3,8 +3,8 @@ module.exports = function(sequelize, DataTypes) {
       foodProduct: DataTypes.STRING,
       quantity: DataTypes.DOUBLE,
       expirationStatus: DataTypes.INTEGER,
-      expirationDate: DataTypes.STRING,
-      expirationNotification: DataTypes.STRING
+      expirationDate: DataTypes.DATE,
+      expirationNotification: DataTypes.DATE
     });
     return Grocery;
   };
