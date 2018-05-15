@@ -1,9 +1,10 @@
 body {
     background-image: url("../images/background.png");
+    text-shadow: 2px 2px black;
 }
 
 [class*="col-"] {
-    margin-top: 2%;
+    margin-top: 3%;
 }
 #landing {
     background-image: url("../images/misenplace.jpg"); 
@@ -22,15 +23,30 @@ h1 {
     text-shadow: 2px 2px black;
 }
 .containerStyles {
-    color: white;
+    color: rgb(253, 248, 221);
     font-family: Quicksand;
     text-align: center;
     overflow: auto;
+}
+#indexContent {
+    margin-bottom: 3%;
 }
 h2 {
     text-align: center;
     font-size: 200%;
     font-family: Quicksand;
+}
+.form-group {
+    font-size: 200%;
+    max-width: 40%;
+    margin-left: 10%;
+    text-align: left;
+}
+.btn {
+    text-shadow: none;
+    background-color: lightgray;
+    border: none;
+    color: black;
 }
 .inventories {
     background-color: yellow;
@@ -45,8 +61,9 @@ h2 {
     margin-top: 0px;
     padding-top: 1%;
     padding-bottom: 1%;
-    background: linear-gradient(white, gray);
+    background: linear-gradient( rgb(0, 124, 10), rgb(17, 230, 70), rgb(0, 124, 10));
     color: black;
+    text-shadow: none;
     font-family: helvetica;
     font-size: 12px;
     text-align: center;

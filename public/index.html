@@ -20,132 +20,47 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
 
 </head>
 
 <body>
 
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-            </div>
-        </div>
-    </nav>
     <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <h2>Login Form</h2>
-                <form class="login">
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="email-input" placeholder="Email">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="password-input" placeholder="Password">
-                    </div>
-                    <button type="submit" class="btn btn-default">Login</button>
-                </form>
-                <br />
-                <p>Or sign up
-                    <a href="/register">here</a>
-                </p>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="container">
-        <div class="row">
+        <div class="row" id="indexContent">
             <div class="col-md-12" id="landing">
                 <div class="containerStyles">
                     <h1>Grocery Application</h1>
                     <p id="intro">An application that not only maintains your current fridge and pantry
                         <br> inventory, but reminds you when your food is about to expire! Add a shopping list
                         <br>and keep your groceries organized with our
-                        <br>*AMAZING APP THAT DOESN'T HAVE A NAME YET*!!!!
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                    </p>
+                        <br>*AMAZING APP THAT DOESN'T HAVE A NAME YET*!!!!</p>
+
+                    <div class="container">
+                        <div class="row" id="loginContainer">
+                            <div class="col-md-6">
+                                <form class="login">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Sign In!</label>
+                                        <input type="email" class="form-control" id="email-input" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" id="password-input" placeholder="Password">
+                                    </div>
+                                    <button type="submit" class="btn btn-default">Login</button>
+                                </form>
+                            </div>
+                            <div class="col-md-6">
+                                <h2> Don't have an account? Sign up here!</h2>
+                                <a id="signUpButton" href="/register" class="btn btn-info" role="button">Let's GROCERY!</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
         </div>
     </div>
-
-
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-5 inventories">
-                <div id="groceries">
-                    <h2>Groceries to Get</h2>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                </div>
-            </div>
-
-            <div class="col-md-5 inventories">
-                <div id="inventory">
-                    <h2>Current Inventory</h2>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-5 expire">
-                        <div id="expiringSoon">
-                            <h2>Expiring Soon</h2>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                        </div>
-                    </div>
-
-                    <div class="col-md-5 expire">
-                        <div id="expired">
-                            <h2>Expired</h2>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
 
     <div id="footer">
         © Brock | Ozair | Taylor | Shelby
