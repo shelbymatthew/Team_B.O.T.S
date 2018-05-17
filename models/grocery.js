@@ -8,7 +8,7 @@ module.exports = function(sequelize, DataTypes) {
     Grocery.associate = function(models) {
       models.Grocery.belongsTo(models.User);
     };
-    // Grocery.getExpirationStatus will return 0, 1, or 2 and then you can use that to display it in the proper section of the html page.
+    // Grocery.getExpirationStatus will return 0, 1, or 2 and then you can use that to display it in the proper section of the html page
     Grocery.prototype.getExpirationStatus = function() {
       var today = Date.now();
       if(today >= this.expirationDate) {
