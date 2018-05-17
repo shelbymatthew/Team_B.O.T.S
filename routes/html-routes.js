@@ -46,7 +46,9 @@ module.exports = function(app, db) {
     db.Grocery.create({
       foodProduct: req.body.name,
       quantity: req.body.quantity,
+      expirationDate: req.body.date,
       UserId: req.user.id
+
     })
     .then(function(grocery) {
       res.redirect("/members");
