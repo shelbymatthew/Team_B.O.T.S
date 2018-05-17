@@ -49,7 +49,7 @@ module.exports = function(app, db) {
       UserId: req.user.id
     })
     .then(function(grocery) {
-      res.redirect("/members/getgroceries");
+      res.redirect("/members");
     });
   });
 
