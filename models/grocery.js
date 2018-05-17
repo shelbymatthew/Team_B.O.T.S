@@ -2,6 +2,7 @@ module.exports = function(sequelize, DataTypes) {
     var Grocery = sequelize.define("Grocery", {
       foodProduct: DataTypes.STRING,
       quantity: DataTypes.DOUBLE,
+      quantityUnit: DataTypes.STRING,
       expirationDate: DataTypes.DATE,
       expirationNotification: DataTypes.DATE
     });
