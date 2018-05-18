@@ -53,11 +53,13 @@ h2 {
 .inventories {
     background-color: yellow;
     margin: 4%;
+    text-align: center;
 }
 .expire {
     background-color: red;
     margin: 4%;
 }
+
 #footerContainer {
     overflow: hidden;
     text-align: center;
