@@ -4,7 +4,8 @@ module.exports = function(sequelize, DataTypes) {
       quantity: DataTypes.DOUBLE,
       quantityUnit: DataTypes.STRING,
       expirationDate: DataTypes.DATE,
-      expirationNotification: DataTypes.DATE
+      expirationNotification: DataTypes.DATE,
+      ownedItem: DataTypes.BOOLEAN
     });
     Grocery.associate = function(models) {
       models.Grocery.belongsTo(models.User);

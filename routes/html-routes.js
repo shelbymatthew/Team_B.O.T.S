@@ -43,12 +43,18 @@ module.exports = function(app, db) {
   });
 
   app.post("/members/addgroceries", isAuthenticated, function(req, res) {
+    if(req.body.notification) {
+      var notification = req.body.notification;
+    }else if(req.body.date) {
+      var notification = (Date.parse(req.body.date) - 604800000);
+    }
     db.Grocery.create({
       foodProduct: req.body.name,
       quantity: req.body.quantity,
-      expirationDate: req.body.date,
+      expirationDate: req.body.date || null,
+      expirationNotification: notification || null,
+      ownedItem: req.body.owned,
       UserId: req.user.id
-
     })
     .then(function(grocery) {
       res.redirect("/members");
