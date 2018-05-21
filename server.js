@@ -4,9 +4,6 @@ var bodyParser = require("body-parser");
 var session = require("express-session");
 // Requiring passport as we've configured it
 var passport = require("./config/passport");
-console.log("----------------------------------------------------------")
-console.log(process.env.JAWSDB_URL)
-console.log("-------------------------------------------------------------------")
 
 // Setting up port and requiring models for syncing
 var PORT = process.env.PORT || 8080;
@@ -14,6 +11,7 @@ var db = require("./models");
 
 // Creating express app and configuring middleware needed for authentication
 var app = express();
+//this lets you make ajax requests using forms
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.static("public"));
@@ -27,7 +25,7 @@ require("./routes/html-routes.js")(app, db);
 require("./routes/api-routes.js")(app, db);
 
 // Syncing our database and logging a message to the user upon success
-db.sequelize.sync().then(function() {
+db.sequelize.sync({force: false}).then(function() {
   app.listen(PORT, function() {
     console.log("==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.", PORT, PORT);
   });
